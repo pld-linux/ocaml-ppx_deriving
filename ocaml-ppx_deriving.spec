@@ -79,7 +79,7 @@ cp -pr src_examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 # sources
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/ocaml/ppx_deriving/*/*.ml
 # packaged as %doc
-%{__rm} -r $RPM_BUILD_ROOT%{_prefix}/doc/ppx_deriving
+%{__rm} -r $RPM_BUILD_ROOT%{_docdir}/ppx_deriving
 
 %clean
 rm -rf $RPM_BUILD_ROOT
