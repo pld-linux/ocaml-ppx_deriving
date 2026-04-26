@@ -10,13 +10,13 @@
 Summary:	Type-driven code generation for OCaml
 Summary(pl.UTF-8):	Generowanie kodu dla OCamla sterowane typami
 Name:		ocaml-ppx_deriving
-Version:	5.2.1
+Version:	6.1.1
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/ocaml-ppx/ppx_deriving/releases
-Source0:	https://github.com/ocaml-ppx/ppx_deriving/releases/download/v%{version}/ppx_deriving-v%{version}.tbz
-# Source0-md5:	041756e958b3ab1c1d76162d24ec7bd8
+Source0:	https://github.com/ocaml-ppx/ppx_deriving/releases/download/v%{version}/ppx_deriving-%{version}.tar.gz
+# Source0-md5:	3208e6028fbb5a417f751d3529eae031
 URL:		https://github.com/ocaml-ppx/ppx_deriving
 BuildRequires:	cppo
 BuildRequires:	ocaml >= 1:4.05.0
@@ -63,7 +63,7 @@ Pakiet ten zawiera pliki niezbędne do tworzenia programów w OCamlu
 używających biblioteki ppx_deriving.
 
 %prep
-%setup -q -n ppx_deriving-v%{version}
+%setup -q -n ppx_deriving-%{version}
 
 %build
 dune build --verbose
